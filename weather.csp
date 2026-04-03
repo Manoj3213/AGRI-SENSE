@@ -1,0 +1,38 @@
+{
+  "name": "WeatherData",
+  "type": "object",
+  "properties": {
+    "state": {
+      "type": "string",
+      "title": "State"
+    },
+    "year": {
+      "type": "number",
+      "title": "Year"
+    },
+    "winter_mm": {
+      "type": "number",
+      "title": "Winter (mm)"
+    },
+    "summer_mm": {
+      "type": "number",
+      "title": "Summer (mm)"
+    },
+    "monsoon_mm": {
+      "type": "number",
+      "title": "Monsoon (mm)"
+    },
+    "post_monsoon_mm": {
+      "type": "number",
+      "title": "Post-Monsoon (mm)"
+    },
+    "annual_mm": {
+      "type": "number",
+      "title": "Annual (mm)"
+    }
+  },
+  "required": [
+    "state",
+    "year"
+  ]
+}
