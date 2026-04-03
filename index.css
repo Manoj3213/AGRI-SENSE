@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    --background: 60 9% 98%;
+    --foreground: 24 10% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 24 10% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 24 10% 15%;
+    --primary: 142 72% 29%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 60 9% 93%;
+    --secondary-foreground: 24 10% 15%;
+    --muted: 60 9% 93%;
+    --muted-foreground: 24 5% 45%;
+    --accent: 37 91% 55%;
+    --accent-foreground: 24 10% 15%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 60 5% 86%;
+    --input: 60 5% 86%;
+    --ring: 142 72% 29%;
+    --radius: 0.75rem;
+    --green-50: 138 76% 97%;
+    --green-100: 141 84% 93%;
+    --green-600: 142 72% 29%;
+    --green-700: 142 72% 24%;
+    --amber-500: 37 91% 55%;
+    --earth-100: 39 77% 94%;
+    --earth-700: 24 35% 35%;
+  }
+
+  .dark {
+    --background: 20 14% 4%;
+    --foreground: 60 9% 98%;
+    --card: 24 10% 8%;
+    --card-foreground: 60 9% 98%;
+    --popover: 24 10% 8%;
+    --popover-foreground: 60 9% 98%;
+    --primary: 142 72% 45%;
+    --primary-foreground: 0 0% 5%;
+    --secondary: 24 10% 15%;
+    --secondary-foreground: 60 9% 98%;
+    --muted: 24 10% 15%;
+    --muted-foreground: 60 5% 65%;
+    --accent: 37 91% 55%;
+    --accent-foreground: 0 0% 5%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 24 10% 18%;
+    --input: 24 10% 18%;
+    --ring: 142 72% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter;
+  }
+}
