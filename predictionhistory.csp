@@ -1,0 +1,35 @@
+{
+  "name": "PredictionHistory",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "title": "Type",
+      "enum": [
+        "crop_prediction",
+        "risk_analysis"
+      ]
+    },
+    "input_data": {
+      "type": "string",
+      "title": "Input Data (JSON)"
+    },
+    "result": {
+      "type": "string",
+      "title": "Result (JSON)"
+    },
+    "location": {
+      "type": "string",
+      "title": "Location"
+    },
+    "pincode": {
+      "type": "string",
+      "title": "Pincode"
+    }
+  },
+  "required": [
+    "type",
+    "input_data",
+    "result"
+  ]
+}
