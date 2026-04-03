@@ -1,0 +1,53 @@
+{
+  "name": "CropData",
+  "type": "object",
+  "properties": {
+    "crop": {
+      "type": "string",
+      "title": "Crop Name"
+    },
+    "nitrogen": {
+      "type": "number",
+      "title": "Nitrogen (N)"
+    },
+    "phosphorus": {
+      "type": "number",
+      "title": "Phosphorus (P)"
+    },
+    "potassium": {
+      "type": "number",
+      "title": "Potassium (K)"
+    },
+    "ph_min": {
+      "type": "number",
+      "title": "pH Min"
+    },
+    "ph_max": {
+      "type": "number",
+      "title": "pH Max"
+    },
+    "max_salt_ec": {
+      "type": "number",
+      "title": "Max Salt (EC)"
+    },
+    "ideal_temp": {
+      "type": "number",
+      "title": "Ideal Temp (\u00b0C)"
+    },
+    "moisture": {
+      "type": "number",
+      "title": "Moisture (%)"
+    }
+  },
+  "required": [
+    "crop",
+    "nitrogen",
+    "phosphorus",
+    "potassium",
+    "ph_min",
+    "ph_max",
+    "max_salt_ec",
+    "ideal_temp",
+    "moisture"
+  ]
+}
