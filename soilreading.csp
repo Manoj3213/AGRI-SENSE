@@ -1,0 +1,59 @@
+{
+  "name": "SoilReading",
+  "type": "object",
+  "properties": {
+    "nitrogen": {
+      "type": "number",
+      "title": "Nitrogen (N)"
+    },
+    "phosphorus": {
+      "type": "number",
+      "title": "Phosphorus (P)"
+    },
+    "potassium": {
+      "type": "number",
+      "title": "Potassium (K)"
+    },
+    "ph": {
+      "type": "number",
+      "title": "pH Level"
+    },
+    "ec": {
+      "type": "number",
+      "title": "Salt Level (EC)"
+    },
+    "temperature": {
+      "type": "number",
+      "title": "Temperature (\u00b0C)"
+    },
+    "moisture": {
+      "type": "number",
+      "title": "Moisture (%)"
+    },
+    "location": {
+      "type": "string",
+      "title": "Location"
+    },
+    "pincode": {
+      "type": "string",
+      "title": "Pincode"
+    },
+    "source": {
+      "type": "string",
+      "title": "Source",
+      "enum": [
+        "hardware",
+        "manual"
+      ]
+    }
+  },
+  "required": [
+    "nitrogen",
+    "phosphorus",
+    "potassium",
+    "ph",
+    "ec",
+    "temperature",
+    "moisture"
+  ]
+}
